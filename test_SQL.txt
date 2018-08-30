@@ -1,0 +1,57 @@
+CREATE DATABASE student;
+USE student;
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE admin (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`name` varchar(20) NOT NULL,
+`username` varchar(20) NOT NULL,
+`password` varchar(20) NOT NULL,
+PRIMARY KEY (id)
+) ENGINE=InnoDB  AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+LOCK TABLES `admin` WRITE;
+INSERT INTO `admin` VALUES (1,'admin','admin','admin');
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE `student` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`name` varchar(20) NOT NULL,
+`sno` varchar(20) NOT NULL,
+`department` varchar(20) NOT NULL,
+`hometown` varchar(20) NOT NULL,
+`mark` varchar(20) NOT NULL,
+`email` varchar(20) NOT NULL,
+`tel` varchar(20) NOT NULL,
+`sex` varchar(20) NOT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+
+LOCK TABLES `student` WRITE;
+
+INSERT INTO `student` VALUES 
+(1,'张三','001','信息科学技术学院','辽宁','80','zhangsan@163.com','13888888888','男'),
+(2,'李四','002','理学院','上海','70','lisi@sina.com','13812341234','男'),
+(3,'王五','003','外国语学院','北京','88','wangwu@126.com','13698765432','女');
+(4,'赵六','004','机械学院','广州','65','zhaoliu@163.com','13129804563','男');
+(5,'a','a','a','a','a','a','a','a');
+(6,'b','b','b','b','b','b','b','b');
+(7,'c','c','c','c','c','c','c','c');
+(8,'d','d','d','d','d','d','d','d');
+(9,'e','e','e','e','e','e','e','e');
+(10,'f','f','f','f','f','f','f','f');
+(11,'g','g','g','g','g','g','g','g');
+(12,'h','h','h','h','h','h','h','h');
+(13,'i','i','i','i','i','i','i','i');
+(14,'j','j','j','j','j','j','j','j');
+(15,'k','k','k','k','k','k','k','k');
+(16,'l','l','l','l','l','l','l','l');
+(17,'m','m','m','m','m','m','m','m');
+(18,'n','n','n','n','n','n','n','n');
+(19,'o','o','o','o','o','o','o','o');
+(20,'p','p','p','p','p','p','p','p');.
+
+UNLOCK TABLES;
+
+
